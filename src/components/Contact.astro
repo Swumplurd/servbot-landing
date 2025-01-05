@@ -1,0 +1,55 @@
+---
+import Image from "astro/components/Image.astro";
+import ServbotMaincraft from "../assets/img/servbot-mine.webp"
+---
+<section id="contact" class="container mx-auto flex items-center h-[100%] max-w-6xl">
+    <div class="grid grid-cols-2">
+        <Image src={ServbotMaincraft} alt="servbot minecraft"/>
+        <div>
+            <div class="mb-8">
+                <h3 class="text-3xl">Contacto</h3>
+                <p>
+                    ¿Tienes preguntas o necesitas ayuda? ¡Estamos aquí para asistirte!
+                </p>
+            </div>
+
+            <div class="flex flex-col gap-8 max-w-xl">
+                <article>
+                    <h4>📧 Correo Electrónico</h4>
+                    <p>
+                        Envía tus consultas a <a href="mailto:soporte@ejemplo.com">soporte@ejemplo.com</a>.
+                    </p>
+                </article>
+                <article>
+                    <h4>📞 Teléfono</h4>
+                    <p>
+                        Llámanos al <a href="tel:+1 (123) 456-7890">+1 (123) 456-7890</a> de lunes a viernes, de 9:00 AM a 6:00 PM (hora local).
+                    </p>
+                </article>
+                <article>
+                    <h4>💬 Chat en Vivo</h4>
+                    <p>
+                        Haz clic en el botón de chat en la esquina inferior derecha para hablar con uno de nuestros agentes en tiempo real.
+                    </p>
+                </article>
+                <article>
+                    <h4>📱 Redes Sociales</h4>
+                    <p>
+                        Síguenos y envíanos un mensaje:
+                    </p>
+                    <ul>
+                        <li>
+                            Facebook: facebook.com/ejemplo
+                        </li>
+                        <li>
+                            Twitter: twitter.com/ejemplo
+                        </li>
+                        <li>
+                            Instagram: instagram.com/ejemplo
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>

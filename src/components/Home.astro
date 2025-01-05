@@ -1,0 +1,35 @@
+---
+import { Image } from "astro:assets";
+
+import { Icon } from "astro-icon/components";
+import ServbotImage from "../assets/img/servbot.webp"
+---
+<main id="home" class="container mx-auto flex items-center h-[100%] max-w-6xl">
+    <section class="grid grid-cols-2">
+        <div>
+            <h1 class="text-8xl font-bold">Chatbot Service</h1>
+
+            <article class="mt-3">
+                <h2 class="text-6xl font-light border-t-2 w-fit mb-3">Concept</h2>
+                <p>
+                    Excepteur aute cillum amet eu fugiat sint dolore elit ullamco duis nisi
+                    irure laboris. Fugiat cupidatat cillum duis cupidatat enim non.
+                </p>
+
+                <div class="flex gap-5 mt-3 *:rounded *:font-semibold *:bg-blue-600 *:p-2">
+                    <button class="hover:bg-blue-700">More details</button>
+                    <button class="hover:bg-blue-700">View demo</button>
+                </div>
+            </article>
+        </div>
+        <div>
+            <Image src={ServbotImage} alt="servbot"/>
+            
+        </div>
+        <div class="col-span-2 flex justify-center">
+            <a href="#about">
+                <Icon class="w-32 h-32 animate-bounce" name="tabler:chevron-compact-down"/>
+            </a>
+        </div>
+    </section>
+</main>

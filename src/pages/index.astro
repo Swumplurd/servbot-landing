@@ -1,11 +1,25 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import Navbar from '../components/Navbar.astro';
 import Layout from '../layouts/Layout.astro';
+
+
+import Home from '../components/Home.astro';
+import About from '../components/About.astro';
+import Features from '../components/Features.astro';
+import Contact from '../components/Contact.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Home">
+	<div class="h-screen">
+		<div class="container mx-auto max-w-8xl overflow-hidden">
+			<Navbar/>
+		</div>
+		<Home/>
+		<About/>
+		<Features/>
+		<Contact/>
+	</div>
 </Layout>

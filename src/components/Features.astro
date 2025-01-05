@@ -1,0 +1,97 @@
+---
+import { Icon } from "astro-icon/components";
+
+import ServbotWave from "../assets/img/servbot-wave.webp"
+import Image from "astro/components/Image.astro";
+---
+<section id="features" class="container mx-auto flex items-center h-[100%] max-w-6xl">
+    <div class="grid grid-cols-2">
+
+        <ul class="flex flex-col gap-2">
+            <li>
+                <span class="text-xl font-bold">
+                    Conversación Natural
+                </span>
+                <p class="max-w-2xl">
+                    Responde de manera intuitiva y fluida utilizando procesamiento de lenguaje natural (NLP) avanzado para ofrecer interacciones similares a las humanas.
+                </p>
+            </li>
+            <li>
+                <span class="text-xl font-bold">
+                    Multiplataforma
+                </span>
+                <p class="max-w-2xl">
+                    Disponible en diversas plataformas como WhatsApp, Messenger, Telegram, web, y aplicaciones móviles, para una experiencia omnicanal.
+                </p>
+            </li>
+            <li>
+                <span class="text-xl font-bold">
+                    Personalización Dinámica
+                </span>
+                <p class="max-w-2xl">
+                    Adapta las respuestas según las preferencias del usuario y el contexto de la conversación.
+                </p>
+            </li>
+            <li>
+                <span class="text-xl font-bold">
+                    Soporte Multilingüe
+                </span>
+                <p class="max-w-2xl">
+                    Comunícate en varios idiomas, garantizando accesibilidad global.
+                </p>
+            </li>
+            <li>
+                <span class="text-xl font-bold">
+                    Automatización de Tareas
+                </span>
+                <p class="max-w-2xl">
+                    Capaz de gestionar tareas como reservas, recopilación de información y generación de reportes de manera automática.
+                </p>
+            </li>
+            <li>
+                <span class="text-xl font-bold">
+                    Integración con APIs
+                </span>
+                <p class="max-w-2xl">
+                    Conéctate fácilmente con servicios externos como CRMs, herramientas de análisis, sistemas de pago y bases de datos.
+                </p>
+            </li>
+            <li>
+                <span class="text-xl font-bold">
+                    Respuestas Basadas en Contexto
+                </span>
+                <p class="max-w-2xl">
+                    Mantiene el contexto de la conversación para ofrecer respuestas precisas y relevantes.
+                </p>
+            </li>
+            <li>
+                <span class="text-xl font-bold">
+                    Capacidad de Aprendizaje
+                </span>
+                <p class="max-w-2xl">
+                    Aprende de las interacciones previas para mejorar continuamente la calidad de las respuestas.
+                </p>
+            </li>
+            <li>
+                <span class="text-xl font-bold">
+                    Análisis y Reportes
+                </span>
+                <p class="max-w-2xl">
+                    Genera informes detallados sobre las interacciones para medir el rendimiento y las áreas de mejora.
+                </p>
+            </li>
+            <li>
+                <span class="text-xl font-bold">
+                    Seguridad y Privacidad
+                </span>
+                <p class="max-w-2xl">
+                    Garantiza la protección de los datos del usuario con cifrado avanzado y cumplimiento de normativas como GDPR y CCPA.
+                </p>
+            </li>
+        </ul>
+        <Image class:list={"self-end"} src={ServbotWave} alt="servbot wave"/>
+    </div>
+    <a href="#contact" class="self-end ms-auto">
+        <Icon class="w-32 h-32 animate-bounce" name="tabler:chevron-compact-down"/>
+    </a>
+</section>
